@@ -19,5 +19,8 @@
     "hooks": {
       "pre-push": "yarn lint && yarn typecheck"
     }
+  },
+  "dependencies": {
+    "typescript": "^3.7.5"
   }
 }
