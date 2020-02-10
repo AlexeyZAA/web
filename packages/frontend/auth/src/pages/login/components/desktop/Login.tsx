@@ -11,7 +11,16 @@ interface Props {
   intl: InjectedIntl
 }
 
-const Login: FC<Props> = ({
+interface PropsForm extends Props {
+  email: string;
+  errors: any;
+  password: string;
+  onChangeEmail: (value: string) => void;
+  onChangePassword,
+  onLogin,
+}
+
+const Login: FC<PropsForm> = ({
   email,
   errors,
   intl,

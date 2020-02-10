@@ -7,8 +7,9 @@ const initialState = {
   errors: {},
 }
 
-export default createReducer(initialState, {
-  [actions.change]: (state, { field, value }) => ({ ...state, field: value }),
+export default createReducer(
+  initialState, {
+  [actions.change]: (state, { field, value }) => ({ ...state, value: field }),
   [actions.setErrors]: (state, { errors }) => ({ ...state, errors }),
   [actions.clear]: () => initialState,
 })

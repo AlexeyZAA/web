@@ -6,7 +6,7 @@ import stub from './stub'
 export const change = (field, value) => ({
   type: actions.change,
   field,
-  value,
+  value
 })
 
 export const login = () => async (dispatch, getState, client) => {
